@@ -12,4 +12,8 @@ customers.push({name:"Ruben Dias",email:"RubenDias3@email.com",purchases:["Blue 
 
 //attempting step 3, removing the first person
 customers.shift({name:"Phil Foden",email:"PhilFoden47@email.com",purchases:["Soccer Ball", "Shirt", "Ball Pump"]});
+
+
+//attempting step 4 of updating a persons email
+customers.find(change => change.name == "Bernardo Silva").email = "BSilva20@email.com";
 customers.forEach(obj => console.log(`${obj.name}\t|\t${obj.email}\t|\t${obj.purchases}`))
