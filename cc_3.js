@@ -16,4 +16,8 @@ customers.shift({name:"Phil Foden",email:"PhilFoden47@email.com",purchases:["Soc
 
 //attempting step 4 of updating a persons email
 customers.find(change => change.name == "Bernardo Silva").email = "BSilva20@email.com";
+
+
+//attempting step 4 of adding a new purchase to Haaland's purchases
+customers.find(newPurchase => newPurchase.name == "Erling Haaland").purchases = ["Dj Equipment","Goal Net","Trophy","Jersey"];
 customers.forEach(obj => console.log(`${obj.name}\t|\t${obj.email}\t|\t${obj.purchases}`))
