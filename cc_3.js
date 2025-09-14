@@ -20,4 +20,7 @@ customers.find(change => change.name == "Bernardo Silva").email = "BSilva20@emai
 
 //attempting step 4 of adding a new purchase to Haaland's purchases
 customers.find(newPurchase => newPurchase.name == "Erling Haaland").purchases = ["Dj Equipment","Goal Net","Trophy","Jersey"];
+
+
+//step 5, looping the stuff for each customer
 customers.forEach(obj => console.log(`${obj.name}\t|\t${obj.email}\t|\t${obj.purchases}`))
