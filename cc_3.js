@@ -8,4 +8,8 @@ let customers = [
 
 //attempting step 3, adding someone new
 customers.push({name:"Ruben Dias",email:"RubenDias3@email.com",purchases:["Blue Moon", "Tooth Paste", "ArmBand"]});
+
+
+//attempting step 3, removing the first person
+customers.shift({name:"Phil Foden",email:"PhilFoden47@email.com",purchases:["Soccer Ball", "Shirt", "Ball Pump"]});
 customers.forEach(obj => console.log(`${obj.name}\t|\t${obj.email}\t|\t${obj.purchases}`))
