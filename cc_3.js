@@ -24,3 +24,8 @@ customers.find(newPurchase => newPurchase.name == "Erling Haaland").purchases = 
 
 //step 5, looping the stuff for each customer
 customers.forEach(obj => console.log(`${obj.name}\t|\t${obj.email}\t|\t${obj.purchases}`))
+
+//step 5 cont. doing a statement for the customers
+customers.forEach(customer => {
+    console.log(`${customer.name} bought these items: ${customer.purchases.length}. Their receipt was sent to their email: ${customer.email}`);
+});
